@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .base-input {
+    @apply text-primary w-64 px-4 py-3 rounded-md focus:outline-none bg-gray-700 border border-black focus:border-primary focus:bg-black;
+  }
+  .auth-button {
+    @apply mt-4 lg:m-0 bg-primary text-black w-52 md:w-56 lg:w-5/12 px-4 py-2 rounded-md hover:bg-black hover:text-primary hover:border-primary border border-transparent font-semibold cursor-pointer;
+  }
+}

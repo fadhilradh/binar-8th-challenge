@@ -26,7 +26,7 @@ const QuoteCard = ({ name, job, quote, date, image }) => {
           alt="user-photo"
         />
         <div>
-          <p className="tracking-wider text-yellow-500">{name}</p>
+          <p className="tracking-wider text-primary">{name}</p>
           <p className="text-gray-400">{job}</p>
         </div>
         <img

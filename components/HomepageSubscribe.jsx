@@ -1,15 +1,15 @@
 const HomepageSubscribe = () => {
   return (
-    <section class="flex flex-col justify-between bg-black h-screen w-full text-white md:p-14 p-5">
-      <div class="flex h-3/4">
+    <section className="container mx-auto flex flex-col justify-between bg-black h-screen text-white md:p-14 p-5">
+      <div className="flex h-3/4">
         <img
           src="/assets/Group 3.svg"
-          class="opacity-40 w-1/2 hidden md:inline-flex  "
+          className="opacity-40 w-1/2 hidden md:inline-flex  "
           alt=""
         />
-        <div class="flex flex-col justify-center items-start space-y-14 lg:space-y-10 md:pl-5 lg:pl-24 tracking-wider h-full">
-          <div class="pl-6 pt-20 md:pt-0">
-            <h5 class="mb-16 text-3xl text-center md:text-left">
+        <div className="flex flex-col justify-center items-start space-y-14 lg:space-y-10 md:pl-5 lg:pl-24 tracking-wider h-full">
+          <div className="pl-6 pt-20 md:pt-0">
+            <h5 className="mb-16 text-3xl text-center md:text-left">
               Want to stay in touch?
             </h5>
             <p>
@@ -19,19 +19,19 @@ const HomepageSubscribe = () => {
               don’t spam.
             </p>
           </div>
-          <div class="md:pl-6 flex flex-col items-center lg:items-stretch lg:flex-row justify-start gap-6 w-full">
+          <div className="md:pl-6 flex flex-col items-center lg:items-stretch lg:flex-row justify-start gap-6 w-full">
             <input
               type="text"
               id="input"
-              class="text-yellow-500 px-4 py-3 w-3/4 md:w-full
+              className="text-primary px-4 py-3 w-3/4 md:w-full
               lg:w-1/2 rounded-md focus:outline-none"
               placeholder="Your Email Address"
             />
             <button
-              class="
+              className="
                   mt-4
                   lg:m-0
-                  bg-yellow-500
+                  bg-primary
                   text-black
                   w-3/4
                   md:w-full
@@ -41,9 +41,9 @@ const HomepageSubscribe = () => {
                   py-2
                   rounded-md
                   hover:bg-black
-                  hover:text-yellow-500
+                  hover:text-primary
                   border border-transparent
-                  hover:border-yellow-500
+                  hover:border-primary
                   font-bold
                 "
             >
@@ -53,35 +53,35 @@ const HomepageSubscribe = () => {
         </div>
       </div>
 
-      <footer class="flex flex-col ">
-        <div class="flex justify-evenly md:justify-end space-x-5 lg:space-x-10 xl:space-x-14 mb-5">
-          <div class="hidden md:flex space-x-6">
+      <footer className="flex flex-col ">
+        <div className="flex justify-evenly md:justify-end space-x-5 lg:space-x-10 xl:space-x-14 mb-5">
+          <div className="hidden md:flex space-x-6">
             <a
-              class="text-sm text-gray-500 font-bold hover:text-yellow-500 tracking-widest"
+              className="text-sm text-gray-500 font-bold hover:text-primary tracking-widest"
               href="#main"
             >
               MAIN
             </a>
             <a
-              class="text-sm text-gray-500 font-bold hover:text-yellow-500 tracking-widest"
+              className="text-sm text-gray-500 font-bold hover:text-primary tracking-widest"
               href="#about"
             >
               ABOUT
             </a>
             <a
-              class="text-sm text-gray-500 font-bold hover:text-yellow-500 tracking-widest"
+              className="text-sm text-gray-500 font-bold hover:text-primary tracking-widest"
               href="#features"
             >
               GAME FEATURES
             </a>
             <a
-              class="text-sm text-gray-500 font-bold hover:text-yellow-500 tracking-widest"
+              className="text-sm text-gray-500 font-bold hover:text-primary tracking-widest"
               href="#sysreq"
             >
               SYSTEM REQUIREMENTS
             </a>
             <a
-              class="text-sm text-gray-500 font-bold hover:text-yellow-500 tracking-widest"
+              className="text-sm text-gray-500 font-bold hover:text-primary tracking-widest"
               href="#quotes"
             >
               QUOTES
@@ -94,26 +94,26 @@ const HomepageSubscribe = () => {
           <img src="/assets/twitch.svg" alt="twitch" />
         </div>
 
-        <hr class="mb-5 border border-gray-700" />
+        <hr className="mb-5 border border-gray-700" />
 
-        <span class="flex flex-col md:flex-row text-center md:text-left space-y-3 md:space-y-0 justify-between">
-          <span class="text-sm text-gray-700">
+        <span className="flex flex-col md:flex-row text-center md:text-left space-y-3 md:space-y-0 justify-between">
+          <span className="text-sm text-gray-700">
             © 2021 Fadhil Games, Inc. All Rights Reserved
           </span>
-          <span class="text-xs font-bold uppercase tracking-wider">
-            <a class="cursor-pointer hover:text-yellow-500">
-              Privacy Policy |{" "}
+          <span className="text-xs font-bold uppercase tracking-wider">
+            <a className="cursor-pointer hover:text-primary">
+              Privacy Policy |{' '}
             </a>
-            <a class="cursor-pointer hover:text-yellow-500">
-              {" "}
-              Terms of Services |{" "}
+            <a className="cursor-pointer hover:text-primary">
+              {' '}
+              Terms of Services |{' '}
             </a>
-            <a class="cursor-pointer hover:text-yellow-500"> Code </a>
+            <a className="cursor-pointer hover:text-primary"> Code </a>
           </span>
         </span>
       </footer>
     </section>
-  );
-};
+  )
+}
 
-export default HomepageSubscribe;
+export default HomepageSubscribe

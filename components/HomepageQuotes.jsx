@@ -1,15 +1,15 @@
-import QuoteCard from "./QuoteCard";
+import QuoteCard from './QuoteCard'
 
 const HomepageQuotes = () => {
   return (
-    <section className="flex md:flex-row flex-col h-auto md:h-screen bg-quotes bg-center bg-cover px-7 py-20 md:p-20 lg:p-32 tracking-wider">
+    <section className="container mx-auto flex md:flex-row flex-col h-auto md:h-screen bg-quotes bg-center bg-cover px-7 py-20 md:p-20 lg:p-32 tracking-wider">
       <div className="flex flex-col items-center md:items-start justify-center text-white h-full md:w-1/2 lg:w-full space-y-10 mb-12">
         <h1 className="text-3xl md:text-6xl">TOP SCORES</h1>
         <p className="font-sans w-full lg:w-1/2 text-center md:text-left">
           This top score from various games provided on this platform
         </p>
         <button
-          className="p-3 bg-yellow-500 w-1/3 md:w-40 rounded-sm text-black hover:bg-black hover:text-yellow-500 hover:border-yellow-500 border border-transparent"
+          className="p-3 bg-primary w-1/3 md:w-40 rounded-sm text-black hover:bg-black hover:text-primary hover:border-primary border border-transparent"
           href=""
         >
           see more
@@ -45,7 +45,7 @@ const HomepageQuotes = () => {
         />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HomepageQuotes;
+export default HomepageQuotes
