@@ -1,4 +1,8 @@
+import axios from 'axios'
+import { useRouter } from 'next/router'
 import { useState } from 'react'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 import InputField from '../components/InputField'
 
 const Register = () => {
@@ -6,9 +10,41 @@ const Register = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
+  const router = useRouter()
+  const MySwal = withReactContent(Swal)
+
+  async function register(event) {
+    event.preventDefault()
+    try {
+      await axios.post('http://localhost:5000/register', {
+        username: username,
+        email: email,
+        password: password,
+      })
+      MySwal.fire({
+        icon: 'success',
+        title: 'Register Successful',
+        text: 'Please login using your username and password',
+      })
+      router.push('/login')
+    } catch (err) {
+      console.error(err.response)
+      console.error(err.message)
+
+      MySwal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: err.response.data.message,
+      })
+    }
+  }
+
   return (
-    <div className="h-screen container mx-auto flex justify-center items-center bg-black">
-      <form className="flex flex-col items-center justify-around space-y-5 p-16 bg-gray-900 rounded-lg border-2 border-gray-500">
+    <div className="h-screen container mx-auto bg-carousel bg-cover flex justify-center items-center bg-black">
+      <form
+        onSubmit={(event) => register(event)}
+        className="flex flex-col items-center justify-around space-y-5 p-16 bg-sysreq bg-cover rounded-xl shadow-2xl border-2 border-gray-500"
+      >
         <p className="text-white text-3xl text-primary">Register</p>
         <InputField
           label="Username"
@@ -34,7 +70,7 @@ const Register = () => {
           handleChange={(event) => setPassword(event.target.value)}
         />
 
-        <button className="auth-button" type="submit">
+        <button className="base-button" type="submit">
           Register
         </button>
         <p className="text-primary">

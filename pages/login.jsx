@@ -33,18 +33,22 @@ const Login = () => {
         }`,
       })
     } catch (err) {
-      console.error(err)
+      console.error(err.response)
       MySwal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Please check your login credentials',
+        textColor: '#FFFFFF',
+        background: '#111827',
+        confirmButtonColor: '#F59E0B',
+        confirmButtonTextColor: 'black',
+        text: err.response.data.message || err.response.data,
       })
     }
   }
 
   return (
-    <main className="h-screen container mx-auto flex justify-center items-center bg-black">
-      <form className="flex flex-col items-center justify-around space-y-5 p-16 bg-gray-900 rounded-lg border-2 border-gray-500">
+    <main className="h-screen container mx-auto bg-carousel bg-cover flex justify-center items-center bg-black">
+      <form className="flex flex-col items-center justify-around space-y-5 p-16 bg-sysreq bg-cover rounded-xl shadow-2xl border-2 border-gray-500">
         <p className="text-white text-3xl text-primary mb-3">Login</p>
         <InputField
           placeholder="Enter your username"
@@ -62,7 +66,7 @@ const Login = () => {
           value={password}
           handleChange={(event) => setPassword(event.target.value)}
         />
-        <button className="auth-button" type="button" onClick={login}>
+        <button className="base-button" type="button" onClick={login}>
           Login
         </button>
         <p className="text-primary">
