@@ -3,7 +3,7 @@ import { NavItem } from './NavItem'
 
 const HomepageMain = () => {
   return (
-    <section className="container mx-auto bg-main bg-center bg-cover flex flex-col h-screen">
+    <section className="max-w-screen-2xl mx-auto bg-main bg-center bg-cover flex flex-col h-screen">
       <header>
         <nav className="flex items-center font-bold text-white justify-between h-16 px-5 md:px-10 bg-black opacity-60">
           <p className="cursor-pointer hover:text-primary tracking-widest">

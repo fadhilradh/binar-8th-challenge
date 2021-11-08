@@ -2,7 +2,7 @@ import QuoteCard from './QuoteCard'
 
 const HomepageQuotes = () => {
   return (
-    <section className="container mx-auto flex md:flex-row flex-col h-auto md:h-screen bg-quotes bg-center bg-cover px-7 py-20 md:p-20 lg:p-32 tracking-wider">
+    <section className="max-w-screen-2xl mx-auto flex md:flex-row flex-col h-auto md:h-screen bg-quotes bg-center bg-cover px-7 py-20 md:p-20 lg:p-32 tracking-wider">
       <div className="flex flex-col items-center md:items-start justify-center text-white h-full md:w-1/2 lg:w-full space-y-10 mb-12">
         <h1 className="text-3xl md:text-6xl">TOP SCORES</h1>
         <p className="font-sans w-full lg:w-1/2 text-center md:text-left">

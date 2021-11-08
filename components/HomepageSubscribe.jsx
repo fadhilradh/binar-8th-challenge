@@ -1,6 +1,6 @@
 const HomepageSubscribe = () => {
   return (
-    <section className="container mx-auto flex flex-col justify-between bg-black h-screen text-white md:p-14 p-5">
+    <section className="max-w-screen-2xl mx-auto flex flex-col justify-between bg-black h-screen text-white md:p-14 p-5">
       <div className="flex h-3/4">
         <img
           src="/assets/Group 3.svg"

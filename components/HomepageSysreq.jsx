@@ -1,6 +1,6 @@
 const HomepageSysreq = () => {
   return (
-    <section className=" container mx-auto flex flex-col justify-center h-screen bg-sysreq bg-center bg-cover lg:p-32 md:p-10 px-5 py-10 space-y-20 text-white shadow-sm">
+    <section className=" max-w-screen-2xl mx-auto flex flex-col justify-center h-screen bg-sysreq bg-center bg-cover lg:p-32 md:p-10 px-5 py-10 space-y-20 text-white shadow-sm">
       <h1 className="w-full lg:w-40 text-2xl sm:text-3xl md:text-4xl lg:text-6xl whitespace-nowrap lg:whitespace-normal text-white tracking-wider text-center md:text-left">
         SYSTEM REQUIREMENTS
       </h1>

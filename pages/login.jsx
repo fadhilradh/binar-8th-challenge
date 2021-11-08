@@ -47,7 +47,7 @@ const Login = () => {
   }
 
   return (
-    <main className="h-screen container mx-auto bg-carousel bg-cover flex justify-center items-center bg-black">
+    <main className="h-screen max-w-screen-2xl mx-auto bg-carousel bg-cover flex justify-center items-center bg-black">
       <form className="flex flex-col items-center justify-around space-y-5 p-16 bg-sysreq bg-cover rounded-xl shadow-2xl border-2 border-gray-500">
         <p className="text-white text-3xl text-primary mb-3">Login</p>
         <InputField

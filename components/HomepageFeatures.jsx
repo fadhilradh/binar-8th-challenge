@@ -1,6 +1,6 @@
 const HomepageFeatures = () => {
   return (
-    <section className="flex h-screen container mx-auto bg-features bg-cover bg-center">
+    <section className="flex h-screen max-w-screen-2xl mx-auto bg-features bg-cover bg-center">
       <div className="lg:w-3/5 md:w-1/2 h-full bg-black opacity-40"></div>
       <div className="flex flex-col items-center md:items-start justify-center bg-black opacity-70 md:pl-16 lg:pl-none text-white">
         <h1 className="text-2xl">What's so special ?</h1>

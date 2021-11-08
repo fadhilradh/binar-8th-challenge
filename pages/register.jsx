@@ -40,7 +40,7 @@ const Register = () => {
   }
 
   return (
-    <div className="h-screen container mx-auto bg-carousel bg-cover flex justify-center items-center bg-black">
+    <div className="h-screen max-w-screen-2xl mx-auto bg-carousel bg-cover flex justify-center items-center bg-black">
       <form
         onSubmit={(event) => register(event)}
         className="flex flex-col items-center justify-around space-y-5 p-16 bg-sysreq bg-cover rounded-xl shadow-2xl border-2 border-gray-500"
