@@ -1,27 +1,10 @@
 import Image from 'next/image'
-import { NavItem } from './NavItem'
+import NavBar from './NavBar'
 
 const HomepageMain = () => {
   return (
     <section className="max-w-screen-2xl mx-auto bg-main bg-center bg-cover flex flex-col h-screen">
-      <header>
-        <nav className="flex items-center font-bold text-white justify-between h-16 px-5 md:px-10 bg-black opacity-60">
-          <p className="cursor-pointer hover:text-primary tracking-widest">
-            LOGO
-          </p>
-          <ul className="hidden lg:flex justify-center gap-x-20 md:w-1/2 w-1/3 mr-4">
-            <NavItem title="HOME" />
-            <NavItem title="GAME" href="#game" />
-            <NavItem title="SYSREQ" href="#sysreq" />
-            <NavItem title="SUBSCRIBE" href="#subscribe" />
-          </ul>
-          <ul className="w-auto space-x-10 flex gap-5">
-            <NavItem title="Login" href="/login" />
-            <NavItem title="Register" href="/register" />
-          </ul>
-        </nav>
-      </header>
-
+      <NavBar />
       <article className="flex justify-center items-center w-full flex-1">
         <div className="flex flex-col items-center">
           <div className="flex flex-col items-center">
