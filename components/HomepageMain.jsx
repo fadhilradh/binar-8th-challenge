@@ -3,11 +3,11 @@ import NavBar from './NavBar'
 
 const HomepageMain = () => {
   return (
-    <section className="max-w-screen-2xl mx-auto bg-main bg-center bg-cover flex flex-col h-screen">
+    <section className="max-w-screen-2xl mx-auto bg-main bg-center bg-cover flex col h-screen">
       <NavBar />
       <article className="flex justify-center items-center w-full flex-1">
-        <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center">
+        <div className="flex col items-center">
+          <div className="flex col items-center">
             <h1 className="shadow-2xl uppercase mb-10 font-bold tracking-wider text-3xl text-center md:text-5xl lg:text-7xl ">
               Play traditional game
             </h1>
@@ -25,7 +25,7 @@ const HomepageMain = () => {
       </article>
 
       <div className="flex justify-center text-white text-md w-full h-1/5">
-        <div className="flex flex-col items-center">
+        <div className="flex col items-center">
           <p className="mb-2">THE STORY</p>
 
           <Image

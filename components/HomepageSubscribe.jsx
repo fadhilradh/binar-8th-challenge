@@ -1,13 +1,13 @@
 const HomepageSubscribe = () => {
   return (
-    <section className="max-w-screen-2xl mx-auto flex flex-col justify-between bg-black h-screen text-white md:p-14 p-5">
+    <section className="max-w-screen-2xl mx-auto flex col justify-between bg-black h-screen text-white md:p-14 p-5">
       <div className="flex h-3/4">
         <img
           src="/assets/Group 3.svg"
           className="opacity-40 w-1/2 hidden md:inline-flex  "
           alt=""
         />
-        <div className="flex flex-col justify-center items-start space-y-14 lg:space-y-10 md:pl-5 lg:pl-24 tracking-wider h-full">
+        <div className="flex col justify-center items-start space-y-14 lg:space-y-10 md:pl-5 lg:pl-24 tracking-wider h-full">
           <div className="pl-6 pt-20 md:pt-0">
             <h5 className="mb-16 text-3xl text-center md:text-left">
               Want to stay in touch?
@@ -19,7 +19,7 @@ const HomepageSubscribe = () => {
               don’t spam.
             </p>
           </div>
-          <div className="md:pl-6 flex flex-col items-center lg:items-stretch lg:flex-row justify-start gap-6 w-full">
+          <div className="md:pl-6 flex col items-center lg:items-stretch lg:flex-row justify-start gap-6 w-full">
             <input
               type="text"
               id="input"
@@ -53,7 +53,7 @@ const HomepageSubscribe = () => {
         </div>
       </div>
 
-      <footer className="flex flex-col ">
+      <footer className="flex col ">
         <div className="flex justify-evenly md:justify-end space-x-5 lg:space-x-10 xl:space-x-14 mb-5">
           <div className="hidden md:flex space-x-6">
             <a
@@ -96,7 +96,7 @@ const HomepageSubscribe = () => {
 
         <hr className="mb-5 border border-gray-700" />
 
-        <span className="flex flex-col md:flex-row text-center md:text-left space-y-3 md:space-y-0 justify-between">
+        <span className="flex col md:flex-row text-center md:text-left space-y-3 md:space-y-0 justify-between">
           <span className="text-sm text-gray-700">
             © 2021 Fadhil Games, Inc. All Rights Reserved
           </span>

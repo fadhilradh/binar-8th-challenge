@@ -21,8 +21,6 @@ export async function register(username, email, password) {
     router.push('/login')
   } catch (err) {
     console.error(err.response)
-    console.error(err.message)
-
     MySwal.fire({
       icon: 'error',
       title: 'Oops...',

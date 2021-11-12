@@ -2,13 +2,13 @@ const HomepageFeatures = () => {
   return (
     <section className="flex h-screen max-w-screen-2xl mx-auto bg-features bg-cover bg-center">
       <div className="lg:w-3/5 md:w-1/2 h-full bg-black opacity-40"></div>
-      <div className="flex flex-col items-center md:items-start justify-center bg-black opacity-70 md:pl-16 lg:pl-none text-white">
+      <div className="flex col items-center md:items-start justify-center bg-black opacity-70 md:pl-16 lg:pl-none text-white">
         <h1 className="text-2xl">What's so special ?</h1>
         <h1 className="text-4xl md:text-6xl mb-10">FEATURES</h1>
 
-        <div className="flex flex-col pl-10 md:pl-0">
+        <div className="flex col pl-10 md:pl-0">
           <div className="flex items-baseline">
-            <div className="flex flex-col h-full">
+            <div className="flex col h-full">
               <div className="w-4 h-4 bg-white rounded-full"></div>
               <div className="ml-2 h-32 w-1 border-white border-l"></div>
             </div>

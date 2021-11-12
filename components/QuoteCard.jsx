@@ -2,7 +2,7 @@ const QuoteCard = ({ name, job, quote, date, image }) => {
   return (
     <div
       className="
-        flex flex-col justify-between
+        flex col justify-between
         card
         h-auto
         w-4/5
@@ -38,7 +38,7 @@ const QuoteCard = ({ name, job, quote, date, image }) => {
       <div className="text-gray-300">{quote}</div>
       <div className="text-sm text-gray-500">{date}</div>
     </div>
-  );
-};
+  )
+}
 
-export default QuoteCard;
+export default QuoteCard

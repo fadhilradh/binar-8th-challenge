@@ -12,7 +12,7 @@ const Login = () => {
     <>
       <NavBar cname=" max-w-screen-2xl w-full mx-auto" onlyLogo />
       <main className="h-[calc(100vh-64px)] max-w-screen-2xl mx-auto bg-sysreq bg-cover flex justify-center items-center bg-black">
-        <form className="flex flex-col justify-around space-y-7 w-5/6 max-w-[25rem] sm:w-[25rem] p-10  bg-carousel bg-cover rounded-xl shadow-2xl border-2 border-gray-500">
+        <form className="flex col justify-around space-y-7 w-5/6 max-w-[25rem] sm:w-[25rem] p-10  bg-carousel bg-cover rounded-xl shadow-2xl border-2 border-gray-500">
           <h3 className="text-white text-3xl text-primary mb-3 mx-auto">
             Login
           </h3>
@@ -24,7 +24,7 @@ const Login = () => {
             value={username}
             handleChange={(event) => setUsername(event.target.value)}
           />
-          <div className="flex flex-col ">
+          <div className="flex col ">
             <InputField
               placeholder="Enter your password"
               id="password"

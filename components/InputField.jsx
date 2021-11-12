@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const InputField = ({
   id,
   label,
@@ -9,7 +11,7 @@ const InputField = ({
   title,
 }) => {
   return (
-    <div className="flex flex-col gap-1">
+    <div className="flex col gap-1">
       <label htmlFor={id} className="text-primary">
         {label}
       </label>
@@ -29,3 +31,12 @@ const InputField = ({
 }
 
 export default InputField
+
+InputField.PropTypes = {
+  id: PropTypes.number,
+  type: PropTypes.string,
+  placeholder: PropTypes.string,
+  onChange: PropTypes.func,
+  value: PropTypes.string.isRequired,
+  title: PropTypes.string,
+}

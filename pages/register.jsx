@@ -15,7 +15,7 @@ const Register = () => {
       <div className="h-[calc(100vh-64px)] max-w-screen-2xl mx-auto bg-sysreq bg-cover flex justify-center items-center bg-black">
         <form
           onSubmit={() => register(username, email, password)}
-          className="flex flex-col justify-around gap-y-5 p-10 w-5/6 max-w-[25rem] sm:w-[25rem] bg-carousel bg-cover rounded-xl shadow-2xl border-2 border-gray-500"
+          className="flex col justify-around gap-y-5 p-10 w-5/6 max-w-[25rem] sm:w-[25rem] bg-carousel bg-cover rounded-xl shadow-2xl border-2 border-gray-500"
         >
           <h3 className="text-white text-3xl text-primary text-center">
             Register
@@ -35,7 +35,7 @@ const Register = () => {
             handleChange={(event) => setEmail(event.target.value)}
           />
 
-          <div className="flex flex-col gap-x-3 mt-0">
+          <div className="flex col gap-x-3 mt-0">
             <InputField
               label="Password"
               type={isPasswordVisible ? 'text' : 'password'}
