@@ -13,7 +13,7 @@ const Game = () => {
         <div className="flex col items-start justify-center">
           <h4 className="text-2xl mb-10 font-bold text-center">PLAYER 1</h4>
           <div className="flex col gap-y-10">
-            <SuitImage cname="batu" src="/assets/game/batu.png" ref={}/>
+            <SuitImage cname="batu" src="/assets/game/batu.png" />
             <SuitImage cname="gunting" src="/assets/game/gunting.png" />
             <SuitImage cname="kertas" src="/assets/game/kertas.png" />
           </div>
